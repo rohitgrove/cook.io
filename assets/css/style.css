@@ -149,7 +149,9 @@
   box-sizing: border-box;
 }
 
-li{list-style: none;}
+li {
+  list-style: none;
+}
 
 a,
 img,
@@ -164,16 +166,20 @@ a {
   text-decoration: none;
 }
 
-img {height: auto;}
+img {
+  height: auto;
+}
 
 input,
 button {
   background: none;
   border: none;
-  font: inherit; 
+  font: inherit;
 }
 
-input {width: 100%;}
+input {
+  width: 100%;
+}
 
 button {
   color: inherit;
@@ -193,7 +199,7 @@ body {
   font-size: var(--fs-body-medium);
   font-weight: var(--weight-regular);
   line-height: 20px;
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.25px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -203,13 +209,21 @@ body {
 }
 
 @keyframes fade {
-  0%{opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-main {flex-grow: 1;}
+main {
+  flex-grow: 1;
+}
 
-:focus-visible {outline-color: var(--primary);}
+:focus-visible {
+  outline-color: var(--primary);
+}
 /*-----------------------------------*\
   #TYPOGRAPHY
 \*-----------------------------------*/
