@@ -66,10 +66,12 @@ Recipe name
 <span class="material-symbols-outlined" aria-hidden="true">schedule</span>
 2 minutes
 
+aria-label = Add to saved recipes
+
 <span class="material-symbols-outlined bookmark-add" aria-hidden="true">bookmark_add</span>
 <span class="material-symbols-outlined bookmark" aria-hidden="true">bookmark</span>
 
-
+Show more
 
 
 #---------- TAG ----------#
