@@ -10,7 +10,7 @@ const /**{String} */ TYPE = "public";
 
 export const fetchData = async function (queries, successCallback) {
     const /**{String} */ query = queries?.join("&")
-        .replace(/ ,/g, "=")
+        .replace(/,/g, "=")
         .replace(/ /g, "%20")
         .replace(/\+/g, "%2B");
     
