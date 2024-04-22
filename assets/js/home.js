@@ -74,18 +74,18 @@ addEventOnElements($tabBtns, "keydown", function (e) {
  * fetch data for tab content
 */
 
-const addTabContent = ($currentTabBtn, $currentTabPannel) => {
+const addTabContent = ($currentTabBtn, $currentTabPanel) => {
     const /**{NodeElement} */ $gridList = document.createElement("div");
     $gridList.classList.add("grid-list");
 
-    $currentTabPannel.innerHTML = `
+    $currentTabPanel.innerHTML = `
         <div class="grid-list">
             ${$skeletonCard.repeat(12)}
         </div>
     `
 
     fetchData([['mealType', $currentTabBtn.textContent.trim().toLowerCase()], ...cardQueries], function (data) {
-        $currentTabPannel.innerHTML = "";
+        $currentTabPanel.innerHTML = "";
         for (let i = 0; i < 12; i++) {
             const {
                 recipe: {
@@ -131,10 +131,10 @@ const addTabContent = ($currentTabBtn, $currentTabPannel) => {
             $gridList.appendChild($card);
         }
 
-        $currentTabPannel.appendChild($gridList);
+        $currentTabPanel.appendChild($gridList);
 
         $currentTabPannel.innerHTML += `
-            <a href="./recipes.html" class="btn btn-secondary label-large has-state">Show more</a>
+            <a href="./recipes.html?mealType=${$currentTabBtn.textContent.trim().toLowerCase()}" class="btn btn-secondary label-large has-state">Show more</a>
         `;
     })
 }
