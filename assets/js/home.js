@@ -137,7 +137,7 @@ const addTabContent = ($currentTabBtn, $currentTabPanel) => {
 
         $currentTabPanel.appendChild($gridList);
 
-        $currentTabPannel.innerHTML += `
+        $currentTabPanel.innerHTML += `
             <a href="./recipes.html?mealType=${$currentTabBtn.textContent.trim().toLowerCase()}" class="btn btn-secondary label-large has-state">Show more</a>
         `;
     })
